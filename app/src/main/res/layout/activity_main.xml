@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imglogin"
+    tools:context=".controller.MainActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/GuidLineHorizontal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15"/>
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"/>
+    <android.support.constraint.Guideline
+        android:id="@+id/GuidLineHorizontal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35"/>
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"/>
+    <android.support.constraint.Guideline
+        android:id="@+id/GuidLineHorizontal3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/GuidLineHorizontal4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65"/>
+
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/GuidLineHorizontal1"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:text="Welcome"
+        android:textColor="@android:color/white"
+        android:textSize="55sp"/>
+
+  <android.support.v7.widget.AppCompatEditText
+
+      android:id="@+id/etUsername"
+      android:layout_width="0dp"
+      android:textColor="@color/black"
+      android:layout_height="40dp"
+      android:inputType="textPersonName"
+      app:layout_constraintStart_toEndOf="@id/vertical1"
+      app:layout_constraintBottom_toTopOf="@id/GuidLineHorizontal2"
+      app:layout_constraintEnd_toStartOf="@id/vertical2"
+      android:drawableLeft="@drawable/ic_baseline_person_24"
+      android:background="@drawable/edittextstyle"
+      android:hint=" USERNAME"
+    />
+    <android.support.v7.widget.AppCompatEditText
+
+        android:id="@+id/etPassword"
+        android:layout_width="0dp"
+        android:textColor="@color/black"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toEndOf="@id/vertical1"
+        app:layout_constraintBottom_toTopOf="@id/GuidLineHorizontal3"
+        app:layout_constraintEnd_toStartOf="@id/vertical2"
+        android:drawableLeft="@drawable/ic_baseline_key_24"
+        android:background="@drawable/edittextstyle"
+        android:hint=" PASSWORD"
+     />
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@id/vertical2"
+        app:layout_constraintTop_toBottomOf="@id/GuidLineHorizontal3"
+        android:layout_margin="8dp"
+        android:textColor="@android:color/black"
+        android:backgroundTint="#9fd9ea"
+        android:text="Forgot Password?"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnLOGIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/GuidLineHorizontal4"
+        app:layout_constraintLeft_toRightOf="@id/vertical1"
+        app:layout_constraintRight_toLeftOf="@id/vertical2"
+        android:text="LOG IN"
+        android:backgroundTint="#68bed2"
+
+      />
+
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
